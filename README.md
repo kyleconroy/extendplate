@@ -4,7 +4,7 @@
 ## Install
 
 ```
-dep ensure stackmachine.com/extendplate
+dep ensure github.com/stackmachine/extendplate
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ package main
 import (
     "os"
 
-    "stackamachine.com/extendplate"
+    "github.com/stackmachine/extendplate"
 )
 
 func main() {
