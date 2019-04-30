@@ -4,7 +4,7 @@
 ## Install
 
 ```
-dep ensure github.com/stackmachine/extendplate
+go get -u github.com/stackmachine/extendplate
 ```
 
 ## Usage
