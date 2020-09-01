@@ -1,11 +1,5 @@
 # stakmachine/extendplate
-[![GoDoc](https://godoc.org/stackmachine.com/extendplate?status.svg)](https://godoc.org/stackmachine.com/extendplate) [![Build Status](https://travis-ci.org/stackmachine/extendplate.svg?branch=master)](https://travis-ci.org/stackmachine/extendplate)
-
-## Install
-
-```
-go get -u github.com/stackmachine/extendplate
-```
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/stackmachine/extendplate)](https://pkg.go.dev/github.com/stackmachine/extendplate) ![GithubActions](https://github.com/stackmachine/extendplate/workflows/ci/badge.svg?branch=master)
 
 ## Usage
 
@@ -54,22 +48,22 @@ template, inferring the hierarchy from the folder layout.
 package main
 
 import (
-    "os"
+	"os"
 
-    "github.com/stackmachine/extendplate"
+	"github.com/stackmachine/extendplate"
 )
 
 func main() {
-    ts, _ := extendplate.ParseDir("templates", "*.html", nil)
-    tmpl := ts.Lookup("base/dashboard.html")
-    tmpl.Execute(os.Stdout, nil)
-    // <html>
-    //   <head>
-    //     <title>Go Web Programming</title>
-    //   </head>
-    //   <body>
-    //     This is the dashboard
-    //   </body>
-    // </html>
+	ts, _ := extendplate.ParseDir("templates", "*.html", nil)
+	tmpl := ts.Lookup("base/dashboard.html")
+	tmpl.Execute(os.Stdout, nil)
+	// <html>
+	//   <head>
+	//     <title>Go Web Programming</title>
+	//   </head>
+	//   <body>
+	//     This is the dashboard
+	//   </body>
+	// </html>
 }
 ```
